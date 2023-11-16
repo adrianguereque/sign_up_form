@@ -9,10 +9,9 @@ body, html {
     overflow: hidden; /* Prevent scrollbars caused by the absolute positioning */
 }
 
-form {
+.right-box{
     width: 60%;
     margin: 0;
-    padding: 20px; /* Add padding if needed */
     display: flex;
     flex-direction: column;
     background-color: rgb(46, 46, 46,0.6);
@@ -23,25 +22,47 @@ form {
     bottom: 0;
 }
 
+.text{
+    padding: 20px; /* Add padding if needed */
+
+}
+
+form{
+    background-color: rgb(46, 46, 46, 0.7);
+    padding: 16px;
+}
+.form-section {
+    margin: 0;
+    display: flex;
+   
+    flex-direction: column;
+}
+
 ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
     grid-template-rows: repeat(3, 1fr); /* Two rows with equal height */
     gap: 10px; /* Adjust the gap between items */
-    background-color: rgb(46, 46, 46, 0.7);
 
     margin: 0; /* Remove default margin */
-  padding: 0 0 0 0; /* Remove default padding */
-  list-style-type: none; /* Remove default list item bullets */
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove default list item bullets */
 }
 
 li{
     display: flex;
     flex-direction: column;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
 }
 
+.submit{
+    margin-top: 28px;
+}
+
+.logo{
+    display: flex;
+    justify-content:right;
+    margin-top: 16px;    
+}
 
 .logo img{
     height: 20%;
