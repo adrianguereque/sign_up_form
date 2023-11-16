@@ -1,0 +1,48 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('images/black_hole.jpeg'); /* Relative path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image within the background */
+    overflow: hidden; /* Prevent scrollbars caused by the absolute positioning */
+}
+
+form {
+    width: 60%;
+    margin: 0;
+    padding: 20px; /* Add padding if needed */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(46, 46, 46,0.6);
+    color: aliceblue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
+    grid-template-rows: repeat(3, 1fr); /* Two rows with equal height */
+    gap: 10px; /* Adjust the gap between items */
+    background-color: rgb(46, 46, 46, 0.7);
+
+    margin: 0; /* Remove default margin */
+  padding: 0 0 0 0; /* Remove default padding */
+  list-style-type: none; /* Remove default list item bullets */
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+.logo img{
+    height: 20%;
+}
